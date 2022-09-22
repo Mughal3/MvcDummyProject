@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "SignUP";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<h2>SignUP</h2>
+<div class="container">
+    <form action="#">
+        <div class="mb-3 mt-3">
+            <label for="First_Name" class="form-label">First Name:</label>
+            <input type="First_Name" class="form-control" id="First_Name" placeholder="Enter Your First Name" name="First_Name">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="Last_Name" class="form-label">Last Name:</label>
+            <input type="Last_Name" class="form-control" id="Last_Name" placeholder="Enter Your Last Name" name="First_Name">
+        </div>
+        <div class="mb-3 mt-3 dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Gender
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item">Male</a></li>
+                <li><a class="dropdown-item">Fe-Male</a></li>
+            </ul>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="Phone_Number" class="form-label">Phone Number</label>
+            <input type="Phone_Number" class="form-control" id="Phone_Number" placeholder="Enter Your Mobile Number" name="First_Name">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <a href="SignUP" type="button" class="btn btn-primary">SignUP</a>
+        <a href="SignIN" type="button" class="btn btn-primary">SignIN</a>
+        <!--<button type="submit" class="btn btn-primary">SignIN</button>-->
+    </form>
+</div>

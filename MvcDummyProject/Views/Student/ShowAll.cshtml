@@ -1,0 +1,97 @@
+﻿
+@model MvcDummyProject.Models.StudentFinalModel
+
+@{
+    //ViewBag.Title = "SetStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var student = ViewData["FirstStudent"] as MvcDummyProject.Models.StudentModel;
+    var studentList = ViewData["FourthStudent"] as List<MvcDummyProject.Models.StudentModel>;
+    var students = ViewData["Fifthstudent"] as List<MvcDummyProject.Models.StudentModel>;
+    var FaiziStudents = ViewData["Faiz"] as List<MvcDummyProject.Models.StudentModel>;
+}
+
+
+<h2>@ViewBag.Title</h2>
+<p>
+    Name : @Model.
+    <br />
+   
+   
+</p>
+<div>
+    <h4>StudentModel</h4>
+    <hr />
+    <table class="table table-bordered">
+        <thead>
+        <th>
+            Name
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+            Father Name
+        </th>
+        <th>
+            Address
+        </th>
+        </thead>
+
+        <tbody>
+            <tr>
+                @*<td> @FaiziStudents.</td>
+                    <td> @FaiziStudents.Age</td>
+                    <td>@FaiziStudents.FatherName</td>
+                    <td>@FaiziStudents.Address</td>*@
+            </tr>
+        </tbody>
+
+    </table>
+
+    <p>
+        Second Student :  @ViewData["SecondStudent"]
+    </p>
+
+    <p>
+        Third Student :  @ViewData["ThirdStudent"]
+    </p>
+
+
+    <table class="table table-bordered">
+        <thead>
+        <th>
+            Name
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+            Father Name
+        </th>
+        <th>
+            Address
+        </th>
+        </thead>
+
+        @*<tbody>
+
+                @foreach (var item in FaiziStudents)
+                {
+                    <tr>
+                        <td> @item.StudentName</td>
+                        <td> @item.Age</td>
+                        <td>@item.FatherName</td>
+                        <td> @item.Address</td>
+                    </tr>
+                }
+                }
+
+
+            </tbody>*@
+    </table>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
